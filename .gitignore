@@ -2,8 +2,4 @@
 ehthumbs.db
 Thumbs.db
 .DS_Store
-<<<<<<< HEAD
-*.war
-=======
-*.har
->>>>>>> 91658f72b74fede97a3ef35d71f3aede66ce8fcb
+*.gar
