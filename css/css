@@ -1,0 +1,374 @@
+/* variables */
+
+:root {
+  --background-default: #f2f2f2;
+  --background-dark: #121723;
+  --backgroud-semidark: #292e39;
+  --text-translucent: #a1a6b4;
+  --hover-color: #6d31ee;
+  --focus-color: #aa9dfa;
+  --active-color: #4f28a5;
+
+}
+
+/* fonts */
+
+@font-face {
+  font-family: 'Muller';
+  src: local('MullerThin'),
+    url('../fonts/Muller/MullerThin.woff') format('woff'),
+    url('../fonts/Muller/MullerThin.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('MullerLight'),
+    url('../fonts/Muller/MullerLight.woff') format('woff'),
+    url('../fonts/Muller/MullerLight.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('MullerLightItalic'),
+    url('../fonts/Muller/MullerLightItalic.woff') format('woff'),
+    url('../fonts/Muller/MullerLightItalic.woff2') format('woff2');
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('MullerRegular'),
+    url('../fonts/Muller/MullerRegular.woff') format('woff'),
+    url('../fonts/Muller/MullerRegular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('MullerRegularItalic'),
+    url('../fonts/Muller/MullerRegularItalic.woff') format('woff'),
+    url('../fonts/Muller/MullerRegularItalic.woff2') format('woff2');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('MullerMedium'),
+    url('../fonts/Muller/MullerMedium.woff') format('woff'),
+    url('../fonts/Muller/MullerMedium.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: local('MullerBold'),
+    url('../fonts/Muller/MullerBold.woff') format('woff'),
+    url('../fonts/Muller/MullerBold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* general properties */
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muller', 'SansSerif';
+  font-weight: 400;
+  background: #FFF;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1920px;
+  padding: 0 405px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.list {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+}
+
+.button {
+  display: flex;
+  border-radius: 77px;
+  background-color: transparent;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  align-items: center;
+  padding: 0;
+}
+
+.descr {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.title-h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+}
+
+/* header */
+
+.header-top_backrgound {
+  background-color: var(--background-default);
+}
+
+.header-top {
+  display: flex;
+  padding: 9px 0;
+  align-items: center;
+}
+
+.logo-link {
+  margin-right: auto;
+}
+
+.logo-link__img {
+  display: flex;
+  width: 87px;
+}
+
+.header-top__button {
+  color: var(--background-dark);
+  border: 2px solid currentColor;
+  padding: 7.5px 22.5px;
+}
+
+.header-mid {
+  display: flex;
+  padding: 14px 0;
+}
+
+.header-mid__search {
+  display: flex;
+}
+
+.header-mid__search_svg {
+  stroke: var(--hover-color);
+}
+
+.header-bottom_background {
+  border: 1px solid #e6e8ec;
+}
+
+/* hero */
+
+.hero__content {
+  padding: 43px 0;
+}
+
+.title-h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+  margin-bottom: 7px;
+}
+
+.hero__descr {
+  margin-bottom: 20px;
+}
+
+.hero__btn {
+  background-color: var(--hover-color);
+  color: white;
+  padding: 17px 45px;
+}
+
+/* podacsts */
+
+.podcasts {
+  background-color: var(--background-default);
+}
+
+.podcasts-content {
+  padding-top: 52px;
+}
+
+.podcasts__title-h2 {
+  margin-bottom: 20px;
+}
+
+.podcasts__item {
+  background-color: white;
+}
+
+.podcasts__item-top {
+  display: flex;
+  position: relative;
+  padding: 84px 16px 0;
+}
+
+.podcasts__item-top_1 {
+  background-image: url('../img/europe-xix-320.jpg');
+  background-repeat: no-repeat;
+}
+
+.podcasts__item-top_2 {
+  background-image: url('../img/about\ music-320.jpg');
+  background-repeat: no-repeat;
+}
+
+.podcasts__item-top_3 {
+  background-image: url('../img/humans\ today-320.jpg');
+  background-repeat: no-repeat;
+}
+
+.podcasts__item-top_4 {
+  background-image: url('../img/hello\,africa-320.jpg');
+  background-repeat: no-repeat;
+}
+
+.podcasts__item-top_5 {
+  background-image: url('../img/europe-xix-320.jpg');
+  background-repeat: no-repeat;
+}
+
+.podcasts__item-top_6 {
+  background-image: url('../img/europe-xix-320.jpg');
+  background-repeat: no-repeat;
+}
+
+.podcasts__item-top_7 {
+  background-image: url('../img/europe-xix-320.jpg');
+  background-repeat: no-repeat;
+}
+
+.podcasts__item-top_8 {
+  background-image: url('../img/europe-xix-320.jpg');
+  background-repeat: no-repeat;
+}
+
+.podcasts__item-top-content {
+  margin-right: auto;
+  flex-direction: column;
+}
+
+.podcasts__item-top_date {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  width: 51px;
+  height: 16px;
+  color: var(--background-dark);
+  background-color: #e6e8ec;
+  top: 0;
+  left: 0;
+}
+
+.podcasts__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.podcasts__time, .podcasts__leading, .podcasts__social-icons_play-counter, .podcasts__social-icons_like-counter,
+.podcasts__social-icons_share-counter {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.podcasts__time {
+  display: inline-block;
+  color: var(--background-dark);
+  margin-bottom: 7px;
+}
+
+.podcasts__title {
+  margin-bottom: 5px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.podcasts__leading {
+  margin-bottom: 16px;
+  color: var(--text-translucent);
+}
+
+.podcasts__button_play {
+  padding-bottom: 10px;
+}
+
+.podcasts__button_play-svg {
+  min-width: 36px;
+  min-height: 36px;
+}
+
+.podcasts__item-bottom {
+  padding: 6px 34px 8px;
+  border-top: 1px solid #e6e8ec;
+}
+
+.podcasts__socials {
+  display: flex;
+  align-items: center;
+}
+
+.podcasts__social-icons_play-counter, .podcasts__social-icons_like-counter,
+.podcasts__social-icons_share-counter {
+  color: var(--text-translucent);
+}
+
+.podcasts__social-icons_play, .podcasts__social-icons_like {
+  margin-right: 31px;
+}
+
+.podcasts__social-icons_play, .podcasts__social-icons_like, .podcasts__social-icons_share {
+  display: flex;
+  align-items: center;
+}
+
+.podcasts__social-icons_play-svg, .podcasts__social-icons_like-svg, .podcasts__social-icons_share-svg {
+  margin-right: 5px;
+}
+
+.load-more-content {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 54px;
+}
+
+.view-more__btn {
+  padding: 15px 28px;
+  border: 2px solid var(--hover-color);
+  border-radius: 40px;
+  color: var(--hover-color);
+}
