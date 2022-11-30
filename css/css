@@ -372,3 +372,141 @@ h1, h2, h3, h4, h5, h6, p {
   border-radius: 40px;
   color: var(--hover-color);
 }
+
+/* broadcasts */
+
+.broadcasts__title {
+  padding-top: 54px;
+  margin-bottom: 20px;
+}
+
+.broadcasts__author-label {
+  display: flex;
+  margin-bottom: 6px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  align-items: center;
+  color: var(--text-translucent);
+}
+
+.broadcasts-kinds {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0;
+}
+
+.broadcascts-kinds__item {
+  position: relative;
+  padding: 60px 10px 12px;
+  border: 1px solid #e6e8ec;
+  font-size: 12px;
+  margin-bottom: 30px;
+  min-width: 113px;
+  max-width: 255px;
+  margin-right: 30px;
+  min-height: 149px;
+}
+
+.broadcascts-kinds__item:nth-child(2),.broadcascts-kinds__item:nth-child(4),.broadcascts-kinds__item:nth-child(6) {
+  margin-right: 0;
+}
+
+.broadcasts__title-h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 5px;
+}
+
+.broadcascts-kinds__datetime {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 9px;
+}
+
+.broadcascts-kinds__link {
+  position: absolute;
+  bottom: 9px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  text-decoration-line: none;
+  color: var(--hover-color);
+}
+
+.broadcascts-kinds__item_1 {
+  background-image: url('../img/about-people-and-books-desktop-320.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 35%;
+}
+
+.broadcascts-kinds__item_2 {
+  background-image: url('../img/graphic_fill-320.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 35%;
+}
+
+.broadcascts-kinds__item_3 {
+  background-image: url('../img/not\ rome\,not\ troja-320.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 35%;
+}
+
+.broadcascts-kinds__item_4 {
+  background-image: url('../img/erudite-320.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 35%;
+}
+
+.broadcascts-kinds__item_5 {
+  background-image: url('../img/the\ subtleties\ of\ the\ eras-320.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 35%;
+}
+
+.broadcascts-kinds__item_6 {
+  background-image: url('../img/living\ thoughts-320.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 35%;
+}
+
+.broadcasts-archive {
+  padding-left: 90px;
+  background-image: url('../img/mic.png');
+  background-repeat: no-repeat;
+  background-size: 77px;
+  margin-bottom: 30px;
+}
+
+.broadcasts-archive__descr {
+  margin-bottom: 7px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--text-translucent);
+}
+
+.broadcasts-archive__btn {
+  color: var(--background-dark);
+  border: 2px solid var(--background-dark);
+  border-radius: 77px;
+  padding: 7.5px 29px;
+}
+
+.broadcasts-archive_border {
+  border-top: 1px solid var(--text-translucent);
+  padding-top: 30px;
+}
+
+
+/* guests */
+
+.guests {
+  background-color: var(--background-dark);
+}
