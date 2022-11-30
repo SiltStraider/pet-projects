@@ -9,9 +9,13 @@
 
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
   <link rel="stylesheet" href="/css/css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css" />
   <link rel="stylesheet" href="/css/media.css">
 
   <title>Радио - W-Wawe</title>
+
+  <script src="js/select1.js" defer></script>
+  <script src="js/select.js" defer></script>
 
 
 </head>
@@ -590,55 +594,100 @@
 
     <section class="broadcasts">
       <div class="container">
-        <h2 class="title-h2 broadcasts__title"></h2>
-        <label for="broadcasts__author-select" class="broadcasts__author-label"></label>
-        <select name="authors" class="broadcasts__author-select">
-          <option value=""></option>
-          <option value=""></option>
+        <h2 class="title-h2 broadcasts__title">Передачи</h2>
+        <label for="broadcasts__author-select" class="broadcasts__author-label">Автор:</label>
+        <select name="authors" id="choices" class="choices">
+          <option class="choices__option" value="">Дмитрий Гутенберг</option>
+          <option class="choices__option">Татьяна Флеганова</option>
+          <option class="choices__option">Анна Васильева</option>
+          <option class="choices__option">Пётр Дмитриевский</option>
         </select>
         <ul class="list broadcasts-kinds broadcasts__list">
-          <li class="broadcascts-kinds__item">
-            <h3 class="title-h3"></h3>
-            <p class="broadcascts-kinds__datetime"></p>
-            <a href="" class="broadcascts-kinds__link"></a>
+          <li class="broadcascts-kinds__item broadcascts-kinds__item_1">
+            <h3 class="title-h3 broadcasts__title-h3">О людях и книгах</h3>
+            <p class="broadcascts-kinds__datetime">Анонсируется отдельно</p>
+            <a href="" class="broadcascts-kinds__link">Подробнее
+              <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"
+                  fill="#6D31EE" />
+              </svg>
+            </a>
           </li>
-          <li class="broadcascts-kinds__item">
-            <h3 class="title-h3"></h3>
-            <p class="broadcascts-kinds__datetime"></p>
-            <a href="" class="broadcascts-kinds__link"></a>
+          <li class="broadcascts-kinds__item broadcascts-kinds__item_2">
+            <h3 class="title-h3 broadcasts__title-h3">Графомания td</h3>
+            <p class="broadcascts-kinds__datetime">По понедельникам в <time>10:00</time></p>
+            <a href="" class="broadcascts-kinds__link">Подробнее
+              <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"
+                  fill="#6D31EE" />
+              </svg>
+            </a>
           </li>
-          <li class="broadcascts-kinds__item">
-            <h3 class="title-h3"></h3>
-            <p class="broadcascts-kinds__datetime"></p>
-            <a href="" class="broadcascts-kinds__link"></a>
+          <li class="broadcascts-kinds__item broadcascts-kinds__item_3">
+            <h3 class="title-h3 broadcasts__title-h3">Не Рим, не Троя</h3>
+            <p class="broadcascts-kinds__datetime">По вторникам в <time>12:00</time></p>
+            <a href="" class="broadcascts-kinds__link">Подробнее
+              <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"
+                  fill="#6D31EE" />
+              </svg>
+            </a>
           </li>
-          <li class="broadcascts-kinds__item">
-            <h3 class="title-h3"></h3>
-            <p class="broadcascts-kinds__datetime"></p>
-            <a href="" class="broadcascts-kinds__link"></a>
+          <li class="broadcascts-kinds__item broadcascts-kinds__item_4">
+            <h3 class="title-h3 broadcasts__title-h3">Эрудит</h3>
+            <p class="broadcascts-kinds__datetime">По пятницам в <time>17:00</time></p>
+            <a href="" class="broadcascts-kinds__link">Подробнее
+              <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"
+                  fill="#6D31EE" />
+              </svg>
+            </a>
           </li>
-          <li class="broadcascts-kinds__item">
-            <h3 class="title-h3"></h3>
-            <p class="broadcascts-kinds__datetime"></p>
-            <a href="" class="broadcascts-kinds__link"></a>
+          <li class="broadcascts-kinds__item broadcascts-kinds__item_5">
+            <h3 class="title-h3 broadcasts__title-h3">Тонкости эпох</h3>
+            <p class="broadcascts-kinds__datetime">По субботам в <time>10:00</time></p>
+            <a href="" class="broadcascts-kinds__link">Подробнее
+              <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"
+                  fill="#6D31EE" />
+              </svg>
+            </a>
           </li>
-          <li class="broadcascts-kinds__item">
-            <h3 class="title-h3"></h3>
-            <p class="broadcascts-kinds__datetime"></p>
-            <a href="" class="broadcascts-kinds__link"></a>
+          <li class="broadcascts-kinds__item broadcascts-kinds__item_6">
+            <h3 class="title-h3 broadcasts__title-h3">Живые мысли</h3>
+            <p class="broadcascts-kinds__datetime">По воскресеньям в <time>15:30</time></p>
+            <a href="" class="broadcascts-kinds__link">Подробнее
+              <svg width="21" height="8" viewBox="0 0 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"
+                  fill="#6D31EE" />
+              </svg>
+            </a>
           </li>
         </ul>
-        <div class="broadcasts-archive">
-          <p class="broadcasts-archive__descr"></p>
-          <button class="button broadcasts-archive__btn"></button>
+      </div>
+      <div class="broadcasts-archive_border">
+        <div class="container">
+          <div class="broadcasts-archive">
+            <p class="broadcasts-archive__descr">
+              В архив попадают все передачи, которые вы пропустили! Enjoy:)
+            </p>
+            <button class="button broadcasts-archive__btn">Архив</button>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="guests">
       <div class="container">
-        <h2 class="title-h2 guests__title"></h2>
-        <p class="guests__descr"></p>
+        <h2 class="title-h2 guests__title">Гости</h2>
+        <p class="guests__descr">У нас бывают: <br> Блогеры, арт-критики и&nbsp;деятели искусства, музыканты, молодые
+          учёные и&nbsp;люди науки, историки, филологи и&nbsp;много других интересных гостей!</p>
         <div class="guests-accordion">
 
         </div>
