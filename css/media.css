@@ -193,4 +193,33 @@
 
   /* broadcast-select-end */
 
+  /* playlists */
+
+  .playlists__genres-list_768 {
+    display: none;
+  }
+
+  .playlists-slider {
+    padding-left: 32px;
+    overflow: hidden;
+  }
+
+  .playlists-slider__list {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+   .playlists-slider__item:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  .playlists-slider__button {
+
+    border: 2px solid var(--hover-color);
+    border-radius: 77px;
+    min-width: 113px;
+    padding: 8px 17px;
+    color: var(--hover-color);
+  }
+
 }
