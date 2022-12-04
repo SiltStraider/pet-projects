@@ -409,7 +409,7 @@ h1, h2, h3, h4, h5, h6, p {
   min-height: 149px;
 }
 
-.broadcascts-kinds__item:nth-child(2),.broadcascts-kinds__item:nth-child(4),.broadcascts-kinds__item:nth-child(6) {
+.broadcascts-kinds__item:nth-child(2), .broadcascts-kinds__item:nth-child(4), .broadcascts-kinds__item:nth-child(6) {
   margin-right: 0;
 }
 
@@ -509,4 +509,114 @@ h1, h2, h3, h4, h5, h6, p {
 
 .guests {
   background-color: var(--background-dark);
+  color: white;
+}
+
+.guests__content {
+  padding-top: 54px;
+  padding-bottom: 54px;
+}
+
+.guests__title {
+  margin-bottom: 12px;
+}
+
+.guests__descr {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: var(--text-translucent);
+  margin-bottom: 29px;
+}
+
+.guests-accordion__list {
+  margin-bottom: 28px;
+}
+
+.guests-accordion__top-content {
+  display: flex;
+  justify-content: space-between;
+  height: 53px;
+}
+
+.guests-accordion__top-content_1 {
+  margin-bottom: 20px;
+}
+
+.guests-accordion__arrow-button_svg {
+  width: 30px;
+}
+
+.guests-accordion__title-h3 {
+  color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.guests-accordion__bottom-content {
+  display: flex;
+  text-align: left;
+  margin-bottom: 19px;
+}
+
+.guests-accordion__bottom-list_1 {
+  margin-right: 42px;
+  max-width: 100px;
+}
+
+.guests-accordion__bottom-list_2 {
+  max-width: 83px;
+}
+
+.guests-accordion__bottom-item_1:not(:last-child), .guests-accordion__bottom-item_2:not(:last-child) {
+  margin-bottom: 29px;
+}
+
+.guests-accordion__bottom-content-tabs {
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 110%;
+  text-align: left;
+}
+
+.accordion-people-info__img {
+  width: 256px;
+  margin-bottom: 6px;
+}
+
+.accordion-people-info__social-list {
+  display: flex;
+  margin-bottom: 7px;
+}
+
+.accordion-people-info__social-item:not(:last-child) {
+  margin-right: 21px;
+}
+
+.accordion-people-info__title-h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+
+.accordion-people-info__descr {
+  color: var(--text-translucent);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  margin-bottom: 30px;
+}
+
+.accordion-people-info__button {
+  color: var(--focus-color);
+  border: 2px solid var(--focus-color);
+  border-radius: 77px;
+  padding: 8px 13px;
 }
