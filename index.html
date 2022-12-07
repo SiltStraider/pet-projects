@@ -1185,7 +1185,8 @@
             2&nbsp;800&nbsp;₽
           </p>
           <a href="" class="link market-content__link">
-            <svg class="ya-market" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="ya-market" width="20" height="20" viewBox="0 0 20 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_56441_592)">
                 <path
                   d="M10 20C15.5228 20 20 15.5228 20 9.99998C20 4.47714 15.5228 0 10 0C4.47724 0 0 4.47714 0 9.99998C0 15.5228 4.47724 20 10 20Z"
@@ -1207,24 +1208,103 @@
     </section>
 
     <section class="about-us">
-      <div class="container">
-        <h2 class="title-h2 about-us__title-h2"></h2>
-        <p class="about-us__descr"></p>
-        <p class="about-us__descr"></p>
-
-        <div class="about-us__slider">
-
+      <div class="about-us-content">
+        <div class="container">
+          <h2 class="title-h2 about-us__title-h2">О нас</h2>
+          <p class="descr about-us__descr about-us__descr_1">
+            Приём-приём! Как слышно? Мы уже в эфире? Отлично, поехали!
+          </p>
+          <p class="descr about-us__descr about-us__descr_2">
+            Друзья, мы будем очень рады, если вы поможете стать нам лучше. Нам важен каждый слушатель, поэтому вы можете
+            поделиться обратной связью о наших предеачах, темах, подборках и вообще обо всём! Это можно сделать
+            либо написав нам в форме ниже, либо кликнув на наши соцсети в подвале сайта. Спасибо! Услышимся!:)
+          </p>
         </div>
 
-        <form action="" class="about-us-form">
-          <textarea name="" id="" cols="30" rows="10" class="about-us-form__textarea"></textarea>
-          <input type="text" class="about-us-form__input">
-          <input type="text" class="about-us-form__input">
-          <button class="button about-us-form__btn"></button>
-          <label for="" class="about-us-form__label">
-            <input type="text" class="about-us-form__checkbox">
-          </label>
-        </form>
+        <div class="about-us-slider">
+          <ul class="list about-us-slider__list">
+            <li class="about-us-slider__item">
+              <img src="img/gutenberg.jpg" alt="Дмитрий Гутенберг" class="about-us-slider__img">
+              <div class="about-us-slider__text-content">
+                <p class="about-us-slider__name-teacher">
+                  Дмитрий Гутенберг
+                </p>
+                <p class="descr about-us-slider__descr">
+                  Эксперт (ну, почти) по&nbsp;всем вопросам (почти)
+                </p>
+              </div>
+            </li>
+            <li class="about-us-slider__item">
+              <img src="img/vasileva.jpg" alt="Анна Васильева" class="about-us-slider__img">
+              <div class="about-us-slider__text-content">
+                <p class="about-us-slider__name-teacher">
+                  Анна Васильева
+                </p>
+                <p class="descr about-us-slider__descr">
+                  Как я&nbsp;здесь оказалась? А&nbsp;главное&nbsp;&mdash; зачем?
+                </p>
+              </div>
+            </li>
+            <li class="about-us-slider__item">
+              <img src="img/dmitrievski.jpg" alt="Пётр Дмитриевский" class="about-us-slider__img">
+              <div class="about-us-slider__text-content">
+                <p class="about-us-slider__name-teacher">
+                  Пётр Дмитриевский
+                </p>
+                <p class="descr about-us-slider__descr">
+                  Господа! Внимание! Благодарю за&nbsp;внимание!
+                </p>
+              </div>
+            </li>
+            <li class="about-us-slider__item">
+              <img src="img/fleganova.jpg" alt="Татьяна Флеганова" class="about-us-slider__img">
+              <div class="about-us-slider__text-content">
+                <p class="about-us-slider__name-teacher">
+                  Татьяна Флеганова
+                </p>
+                <p class="descr about-us-slider__descr">
+                  Одна я&nbsp;в&nbsp;пальто стою красивая, а&nbsp;вокруг...
+                </p>
+              </div>
+            </li>
+            <li class="about-us-slider__item">
+              <img src="img/prokopiev.jpg" alt="Фёдор Прокопьев" class="about-us-slider__img">
+              <div class="about-us-slider__text-content">
+                <p class="about-us-slider__name-teacher">
+                  Фёдор Прокопьев
+                </p>
+                <p class="descr about-us-slider__descr">
+                  Привет! Я&nbsp;фотограф, музыкант, ведущий
+                </p>
+              </div>
+            </li>
+            <li class="about-us-slider__item">
+              <img src="img/kortneva.jpg" alt="Светлана Кортнева" class="about-us-slider__img">
+              <div class="about-us-slider__text-content">
+                <p class="about-us-slider__name-teacher">
+                  Светлана Кортнева
+                </p>
+                <p class="descr about-us-slider__descr">
+                  Художник-оформитель. Оформляю
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="container">
+          <form action="" class="about-us-form">
+            <textarea class="about-us-form__textarea" placeholder="Что скажете?"></textarea>
+            <input type="text" class="about-us-form__input" placeholder="Имя">
+            <input type="email" class="about-us-form__input" placeholder="Email">
+            <button class="button about-us-form__btn">
+              Отправить
+            </button>
+            <label for="" class="about-us-form__label">
+              <input type="checkbox" class="about-us-form__checkbox">Согласен на обработку персональных данных
+            </label>
+          </form>
+        </div>
       </div>
     </section>
   </main>
