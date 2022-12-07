@@ -8,7 +8,7 @@
   --hover-color: #6d31ee;
   --focus-color: #aa9dfa;
   --active-color: #4f28a5;
-
+  --market-color: #f0d288;
 }
 
 /* fonts */
@@ -676,12 +676,12 @@ h1, h2, h3, h4, h5, h6, p {
 .playlists__items_text {
   border: 1px solid #e6e8ec;
   padding: 9px;
-  padding-bottom: 4px;
+  padding-bottom: 5px;
 }
 
 .playlists-groups__img {
   width: 113px;
-  margin-bottom: -5px;
+  margin-bottom: -6px;
 }
 
 .playlists-groups__title-h4 {
@@ -702,7 +702,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .playlist__underground {
   padding-top: 30px;
-  padding-bottom: 54px;
+  padding-bottom: 49px;
   border-top: 1px solid #d2d5dd;
   ;
 }
@@ -723,4 +723,63 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 22px;
   color: var(--text-translucent);
   margin-bottom: 6px;
+}
+
+/* market */
+
+.market {
+  background-color: var(--backgroud-semidark);
+}
+
+.market-content {
+  padding-top: 52px;
+  padding-bottom: 54px;
+}
+
+.market-content__img {
+  width: 256px;
+}
+
+.market-content__title-h2 {
+  color: var(--market-color);
+  margin-bottom: 10px;
+}
+
+.market__wave {
+  margin-bottom: 15px;
+}
+
+.market-content__descr, .market-content__price {
+  color: white;
+  line-height: 156%;
+}
+
+.market-content__descr_1, .market-content__descr_2 {
+  margin-bottom: 13px;
+}
+
+.market-content__price {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 19px;
+}
+
+.market-content__link {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border: 2px solid var(--market-color);
+  padding: 13px 17px;
+  border-radius: 100px;
+  color: var(--market-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.ya-market {
+  margin-right: 8px;
+  min-width: 20px;
 }
