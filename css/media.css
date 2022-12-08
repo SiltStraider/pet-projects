@@ -81,10 +81,18 @@
     display: none;
   }
 
+  .podcasts__item {
+    width: 256px;
+  }
+
   /* broadcasts */
 
   .broadcascts-kinds__item {
-    width: 44%;
+    width: 113px;
+  }
+
+  .broadcasts-archive {
+    width: 256px;
   }
 
   /* broadcasts-select */
@@ -209,17 +217,27 @@
     margin-bottom: 30px;
   }
 
-   .playlists-slider__item:not(:last-child) {
+  .playlists-slider__item:not(:last-child) {
     margin-right: 15px;
   }
 
   .playlists-slider__button {
-
     border: 2px solid var(--hover-color);
     border-radius: 77px;
     min-width: 113px;
     padding: 8px 17px;
     color: var(--hover-color);
+    justify-content: center;
+  }
+
+  .playlists-groups__list {
+    width: 256px;
   }
 
 }
+
+@media (min-width: 577px) {}
+
+@media (min-width: 769px) {}
+
+@media (min-width: 1025px) {}
