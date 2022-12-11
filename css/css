@@ -236,50 +236,50 @@ h1, h2, h3, h4, h5, h6, p {
 
 .podcasts__item {
   background-color: white;
+  position: relative;
 }
 
 .podcasts__item-top {
   display: flex;
-  position: relative;
   padding: 84px 16px 0;
 }
 
-.podcasts__item-top_1 {
+.podcasts__item_1 {
   background-image: url('../img/europe-xix-320.jpg');
   background-repeat: no-repeat;
 }
 
-.podcasts__item-top_2 {
+.podcasts__item_2 {
   background-image: url('../img/about\ music-320.jpg');
   background-repeat: no-repeat;
 }
 
-.podcasts__item-top_3 {
+.podcasts__item_3 {
   background-image: url('../img/humans\ today-320.jpg');
   background-repeat: no-repeat;
 }
 
-.podcasts__item-top_4 {
+.podcasts__item_4 {
   background-image: url('../img/hello\,africa-320.jpg');
   background-repeat: no-repeat;
 }
 
-.podcasts__item-top_5 {
+.podcasts__item_5 {
   background-image: url('../img/europe-xix-320.jpg');
   background-repeat: no-repeat;
 }
 
-.podcasts__item-top_6 {
+.podcasts__item_6 {
   background-image: url('../img/europe-xix-320.jpg');
   background-repeat: no-repeat;
 }
 
-.podcasts__item-top_7 {
+.podcasts__item_7 {
   background-image: url('../img/europe-xix-320.jpg');
   background-repeat: no-repeat;
 }
 
-.podcasts__item-top_8 {
+.podcasts__item_8 {
   background-image: url('../img/europe-xix-320.jpg');
   background-repeat: no-repeat;
 }
@@ -410,7 +410,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .broadcasts-kinds {
-  width: 256px;
+  max-width: 256px;
   display: flex;
   flex-wrap: wrap;
   font-size: 0;
@@ -496,6 +496,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .broadcasts-archive {
+  display: flex;
+  flex-direction: column;
   padding-left: 90px;
   background-image: url('../img/mic.png');
   background-repeat: no-repeat;
@@ -543,12 +545,20 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 12px;
 }
 
+.guest__descr_under-title {
+  color: var(--text-translucent);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+}
+
 .guests__descr {
   font-weight: 400;
   font-size: 14px;
   line-height: 157%;
   color: var(--text-translucent);
-  margin-bottom: 29px;
+  margin-bottom: 30px;
 }
 
 .guests-accordion__list {
@@ -558,7 +568,10 @@ h1, h2, h3, h4, h5, h6, p {
 .guests-accordion__top-content {
   display: flex;
   justify-content: space-between;
-  height: 53px;
+  padding: 3px 0 0;
+  border-top: 1px solid var(--focus-color);
+  border-bottom: 1px solid var(--focus-color);
+  margin-bottom: -1px;
 }
 
 .guests-accordion__top-content_1 {
@@ -583,16 +596,17 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 19px;
 }
 
-.guests-accordion__bottom-list_1 {
-  margin-right: 42px;
-  max-width: 100px;
+.guests-accordion__bottom-list {
+  column-count: 2;
+  column-gap: 59px;
+  break-after: column;
 }
 
-.guests-accordion__bottom-list_2 {
+.guests-accordion__bottom-item {
   max-width: 83px;
 }
 
-.guests-accordion__bottom-item_1:not(:last-child), .guests-accordion__bottom-item_2:not(:last-child) {
+.guests-accordion__bottom-item:not(:last-child) {
   margin-bottom: 29px;
 }
 
@@ -764,7 +778,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .market-content__img {
-  width: 256px;
+  max-width: 256px;
   margin-bottom: 6px;
 }
 
@@ -861,7 +875,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .about-us-slider__item {
-  width: 113px;
+  min-width: 113px;
 }
 
 .about-us-slider__item:not(:last-child) {
@@ -897,6 +911,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .about-us-form__textarea, .about-us-form__input {
+  color: white;
   background-color: transparent;
   border: 1px solid white;
   border-radius: 20px;
@@ -986,8 +1001,13 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .footer-nav__list {
-  columns: 2;
-  margin-right: -15px;
+  column-count: 2;
+  margin-right: -13px;
+  max-height: 182px;
+}
+
+.footer-nav__items{
+  min-width: 143px
 }
 
 .footer-nav__items:not(:last-child) {

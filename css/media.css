@@ -88,11 +88,11 @@
   /* broadcasts */
 
   .broadcascts-kinds__item {
-    width: 113px;
+    max-width: 113px;
   }
 
   .broadcasts-archive {
-    width: 256px;
+    max-width: 256px;
   }
 
   /* broadcasts-select */
@@ -231,12 +231,704 @@
   }
 
   .playlists-groups__list {
-    width: 256px;
+    max-width: 256px;
   }
 
 }
 
-@media (min-width: 577px) {}
+@media (min-width: 577px) {
+
+  .container {
+    padding: 0 114px;
+  }
+
+  .title-h2 {
+    font-size: 48px;
+  }
+
+  /* header*/
+
+  .header-top {
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
+
+  .logo-link__img {
+    width: 113px;
+  }
+
+  .header-top__button {
+    display: none;
+  }
+
+  .header-mid {
+    padding: 20px 0;
+  }
+
+  .header-mid__search_svg {
+    margin-right: 24px;
+  }
+
+  .header-mid__button {
+    display: flex;
+    color: var(--background-dark);
+    border: 2px solid currentColor;
+    padding: 10px 31px;
+  }
+
+  .burger__line:first-child {
+    top: 20%;
+  }
+
+  .burger__line:last-child {
+    bottom: 20%;
+  }
+
+  .accordion {
+    display: none;
+  }
+
+  .header-bottom_768px {
+    display: flex;
+    padding: 17px 0;
+    align-items: center;
+  }
+
+  .header-bottom__list_768px {
+    display: flex;
+  }
+
+  .header-bottom__item_768px:not(:last-child) {
+    margin-right: 29px;
+  }
+
+  .header-bottom__item_768px:last-child {
+    margin-right: 23px;
+  }
+
+  .header-bottom__button_play-alone {
+    display: flex;
+  }
+
+  /* hero */
+
+  .hero__content {
+    padding-top: 92px;
+    padding-bottom: 89px;
+  }
+
+  .title-h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
+  }
+
+  .hero__descr {
+    font-size: 16px;
+  }
+
+  .hero__btn {
+    padding: 27px 54px;
+    font-size: 20px;
+  }
+
+  /* podcasts */
+
+  .podcasts-content {
+    padding-top: 95px;
+    padding-bottom: 94px;
+  }
+
+  .view-more {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .podcasts__title-h2 {
+    margin-bottom: 29px;
+  }
+
+  .podcasts__item {
+    width: 540px;
+  }
+
+  .podcasts__item:last-child {
+    margin-bottom: 60px;
+  }
+
+  .podcasts__item-top {
+    padding-left: 142px;
+    padding-top: 20px;
+    padding-right: 30px;
+    background-position: left;
+  }
+
+  .podcasts__item-top_date {
+    bottom: -1px;
+    left: -1px;
+    top: auto;
+  }
+
+  .podcasts__title {
+    font-size: 20px;
+    margin-bottom: 7px;
+  }
+
+  .podcasts__button_play {
+    padding-bottom: 18px;
+  }
+
+  .podcasts__button_play-svg {
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+  .podcasts__time {
+    margin-bottom: 11px;
+  }
+
+  .podcasts__leading {
+    font-size: 16px;
+    margin-bottom: 26px;
+  }
+
+  .podcasts__item_1 {
+    background-image: url('../img/europe-xix-768.jpg');
+    background-repeat: no-repeat;
+    background-size: 113px;
+    min-height: 140px;
+  }
+
+  .podcasts__item_2 {
+    background-image: url('../img/about-music-768.jpg');
+    background-repeat: no-repeat;
+    background-size: 113px;
+    min-height: 140px;
+  }
+
+  .podcasts__item_3 {
+    background-image: url('../img/peoples-today-768.jpg');
+    background-repeat: no-repeat;
+    background-size: 113px;
+    min-height: 140px;
+  }
+
+  .podcasts__item_4 {
+    background-image: url('../img/hello\,africa-768.jpg');
+    background-repeat: no-repeat;
+    background-size: 113px;
+    min-height: 140px;
+  }
+
+  .podcasts__item_5 {
+    background-image: url('../img/about-all-768.jpg');
+    background-repeat: no-repeat;
+    background-size: 113px;
+    min-height: 140px;
+  }
+
+  .podcasts__item_6 {
+    background-image: url('../img/phisicks-of-bright-768.jpg');
+    background-repeat: no-repeat;
+    background-size: 113px;
+    min-height: 140px;
+  }
+
+  .podcasts__item_7 {
+    background-image: url('../img/string-of-wave-768.jpg');
+    background-repeat: no-repeat;
+    background-size: 113px;
+    min-height: 140px;
+  }
+
+  .podcasts__item_8 {
+    background-image: url('../img/rules-of-ethicket-768.jpg');
+    background-repeat: no-repeat;
+    background-size: 113px;
+    min-height: 140px;
+  }
+
+  .podcasts__item-bottom {
+    margin-left: 108px;
+    padding: 8px 34px 7px;
+  }
+
+  .podcasts__social-icons_play-counter, .podcasts__social-icons_like-counter, .podcasts__social-icons_share-counter {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .load-more-content {
+    padding-bottom: 0;
+  }
+
+  .view-more__btn {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 23px 52px;
+  }
+
+  /* broadcasts */
+
+  .broadcasts__title {
+    padding-top: 95px;
+    margin-bottom: 11px;
+  }
+
+  .broadcasts__author-label {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 8px;
+  }
+
+  .choices {
+    margin-bottom: 47px;
+  }
+
+  .broadcascts-kinds__item {
+    min-width: 255px;
+    min-height: 260px;
+  }
+
+  .broadcasts-kinds {
+    max-width: 540px;
+    margin-bottom: 31px;
+  }
+
+  .broadcascts-kinds__item {
+    max-width: 250px;
+    padding: 169px 15px 0;
+  }
+
+  .broadcasts__title-h3 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .broadcascts-kinds__datetime {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .broadcascts-kinds__link {
+    color: var(--background-dark);
+    font-size: 16px;
+    line-height: 16px;
+    bottom: 18px;
+  }
+
+  .broadcasts-kinds__link_svg-path {
+    fill: var(--background-dark);
+  }
+
+  .broadcascts-kinds__item_1 {
+    background-image: url('../img/about-people-and-books-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  .broadcascts-kinds__item_2 {
+    background-image: url('../img/graphic\ fill.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  .broadcascts-kinds__item_3 {
+    background-image: url('../img/not\ rome\,not\ troja.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  .broadcascts-kinds__item_4 {
+    background-image: url('../img/erudite.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  .broadcascts-kinds__item_5 {
+    background-image: url('../img/the\ subtleties\ of\ the\ eras.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  .broadcascts-kinds__item_6 {
+    background-image: url('../img/living\ thoughts.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  .broadcasts-archive {
+    flex-direction: column-reverse;
+    max-width: 345px;
+  }
+
+  .broadcasts-archive__descr {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  .broadcasts-archive__btn {
+    padding: 10px 54.5px;
+    margin-bottom: 8px;
+  }
+
+  /* guests */
+
+  .guests__content {
+    padding-top: 95px;
+    padding-bottom: 95px;
+  }
+
+  .guest__descr_under-title {
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 8px;
+  }
+
+  .guests-accordion__list {
+    margin-bottom: 51px;
+  }
+
+  .guests__descr {
+    font-size: 20px;
+    line-height: 160%;
+    margin-bottom: 49px;
+  }
+
+  .guests-accordion__title-h3 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .guests-accordion__top-content {
+    padding: 20px 0;
+    /* margin-bottom: 30px; */
+  }
+
+  .guests-accordion__top-content_1 {
+    margin-bottom: 30px;
+  }
+
+  .guests-accordion__top-content:not(:first-child) {
+    border-top: none;
+  }
+
+  .guests-accordion__arrow-button_svg {
+    width: 48px;
+  }
+
+  .guests-accordion__bottom-list {
+    column-count: 3;
+    column-gap: 31px;
+  }
+
+  .guests-accordion__bottom-item {
+    max-width: none;
+  }
+
+  .guests-accordion__bottom-content-tabs {
+    font-size: 16px;
+    line-height: 17px;
+  }
+
+  .guests-accordion__bottom-content {
+    margin-bottom: 10px;
+  }
+
+  .accordion-people-info__img {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .accordion-people-info__social-list {
+    display: flex;
+    margin-bottom: 1px;
+  }
+
+  .accordion-people-info__social-links_svg {
+    width: 24px;
+  }
+
+  .accordion-people-info__social-item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .accordion-people-info__descr {
+    max-width: 400px;
+  }
+
+  .accordion-people-info__button {
+    padding: 10px 18px;
+  }
+
+  /* playlists */
+
+  .playlists-slider__list {
+    display: none;
+  }
+
+  .playlists__genres-list_768 {
+    display: flex;
+  }
+
+  .playlists__title-h2 {
+    padding-top: 95px;
+    margin-bottom: 10px;
+  }
+
+  .playlists__genre {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 14px;
+  }
+
+  .playlists__genres-list {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 202px;
+    flex-direction: column;
+    margin-bottom: 52px;
+  }
+
+  .playlists__genres-items:not(:last-child) {
+    margin-bottom: 30px;
+    margin-right: 35px;
+  }
+
+  .playlists__radio {
+    color: var(--background-dark);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .playlists__radiobuttons {
+    margin-right: 10px;
+  }
+
+  .playlists-groups__list {
+    max-width: none;
+    margin-bottom: 12px;
+  }
+
+  .playlists-groups__content {
+    display: flex;
+  }
+
+  .playlists-groups__img {
+    max-width: 112px;
+    max-height: 112px;
+  }
+
+  .playlists__items_text {
+    min-width: 142px;
+    min-height: 112px;
+    padding: 39px 5px 5px 9px;
+  }
+
+  .playlists-groups__title-h4 {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .playlists-groups__link {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .playlists-groups__flag_rus, .playlists-groups__flag_eng {
+    left: 0;
+  }
+
+  .playlists__descr, .playlists__copyright {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .playlist__underground {
+    padding-top: 38px;
+    padding-bottom: 89px;
+  }
+
+  /* market */
+
+  .market-content {
+    padding-bottom: 94px;
+  }
+
+  .market-content__img {
+    max-width: 540px;
+    margin-bottom: -17px;
+  }
+
+  .market-content__title-h2 {
+    background-position: 45% 98%;
+    padding-bottom: 31px;
+    margin-bottom: 17px;
+  }
+
+  .market-content__descr {
+    font-size: 16px;
+    line-height: 180%;
+  }
+
+  .market-content__descr_2 {
+    margin-bottom: 30px;
+  }
+
+  .market-content__price {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 29px;
+  }
+
+  .market-content__link {
+    font-size: 20px;
+    line-height: 100%;
+    align-self: flex-start;
+    padding: 23px 11px;
+  }
+
+  /* about-us */
+
+  .about-us-content {
+    padding-top: 95px;
+    padding-bottom: 94px;
+  }
+
+  .about-us__title-h2 {
+    margin-bottom: 12px;
+  }
+
+  .about-us__descr_1 {
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 8px;
+  }
+
+  .about-us__descr_2 {
+    position: relative;
+    font-size: 20px;
+    line-height: 160%;
+    padding-bottom: 150px;
+    margin-bottom: 21px;
+  }
+
+  .about-us__descr_2::before {
+    background-image: url(/img/spiral.png);
+    background-repeat: no-repeat;
+    background-size: 91% 82%;
+    display: flex;
+    content: "";
+    left: -115px;
+    top: 252px;
+    bottom: 0;
+    height: 138px;
+    position: absolute;
+    width: 720px;
+  }
+
+  .about-us-slider {
+    padding-left: 114px;
+    padding-right: 114px;
+  }
+
+  .about-us-slider__list {
+    overflow: hidden;
+  }
+
+  .about-us-slider__item {
+    min-width: 255px;
+  }
+
+  .about-us-slider__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .about-us-slider__img {
+    min-width: 255px;
+  }
+
+  .about-us-slider__text-content {
+    padding: 18px 20px 0 0;
+  }
+
+  .about-us-slider__name-teacher {
+    font-size: 20px;
+    line-height: 20px;
+    max-width: none;
+    margin-bottom: 7px;
+  }
+
+  .about-us-slider__descr {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .about-us-form__textarea {
+    border-radius: 30px;
+    padding: 29px 20px 20px 31px;
+  }
+
+  .about-us-form__textarea::placeholder, .about-us-form__input::placeholder {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .about-us-form__input {
+    border-radius: 40px;
+    padding: 27px 27px 22px 31px;
+  }
+
+  .about-us-form__btn {
+    border-radius: 40px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 26px 54px;
+    margin-bottom: 30px;
+  }
+
+  .about-us-form__label {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  /* footer */
+
+  .footer-top {
+    padding-top: 95px;
+    padding-bottom: 51px;
+  }
+
+  .footer-mid_bg {
+    background-color: #292e39;
+  }
+
+  .footer-mid {
+    padding-bottom: 49px;
+  }
+
+  .footerl-nac__links {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .footer-nav__list {
+    column-count: 3;
+    column-gap: 155px;
+  }
+
+  .footer-nav__items:not(:last-child) {
+    margin-bottom: 27px;
+  }
+
+  .footer-bottom__copyright {
+    font-size: 16px;
+    line-height: 103.34%;
+    margin-top: 23px;
+  }
+
+}
 
 @media (min-width: 769px) {}
 
