@@ -81,11 +81,7 @@
     display: none;
   }
 
-  .podcasts__item {
-    width: 256px;
-  }
-
-  /* broadcasts */
+    /* broadcasts */
 
   .broadcascts-kinds__item {
     max-width: 113px;
@@ -296,10 +292,11 @@
 
   .header-bottom__list_768px {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .header-bottom__item_768px:not(:last-child) {
-    margin-right: 29px;
+    margin-right: 28.5px;
   }
 
   .header-bottom__item_768px:last-child {
@@ -341,14 +338,21 @@
   .view-more {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   .podcasts__title-h2 {
     margin-bottom: 29px;
   }
 
-  .podcasts__item {
-    width: 540px;
+  .podcasts__all-blocks {
+    display: block;
+  }
+
+   .podcasts__item {
+    width: 100%;
+    max-width: 540px;
+    min-width: 381px;
   }
 
   .podcasts__item:last-child {
@@ -448,8 +452,9 @@
   }
 
   .podcasts__item-bottom {
-    margin-left: 108px;
+    margin-left: 113px;
     padding: 8px 34px 7px;
+    padding-left: 30px;
   }
 
   .podcasts__social-icons_play-counter, .podcasts__social-icons_like-counter, .podcasts__social-icons_share-counter {
@@ -668,6 +673,7 @@
 
   .playlists__genres-list_768 {
     display: flex;
+    margin-bottom: 52px;
   }
 
   .playlists__title-h2 {
@@ -683,15 +689,13 @@
 
   .playlists__genres-list {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     max-height: 202px;
-    flex-direction: column;
-    margin-bottom: 52px;
   }
 
-  .playlists__genres-items:not(:last-child) {
+   .playlists__genres-items:not(:last-child) {
     margin-bottom: 30px;
-    margin-right: 35px;
   }
 
   .playlists__radio {
@@ -757,6 +761,7 @@
   }
 
   .market-content__img {
+    min-width: 349px;
     max-width: 540px;
     margin-bottom: -17px;
   }
@@ -810,11 +815,11 @@
     position: relative;
     font-size: 20px;
     line-height: 160%;
-    padding-bottom: 150px;
+    /* padding-bottom: 150px; */
     margin-bottom: 21px;
   }
 
-  .about-us__descr_2::before {
+  /* .about-us__descr_2::before {
     background-image: url(/img/spiral.png);
     background-repeat: no-repeat;
     background-size: 91% 82%;
@@ -826,11 +831,16 @@
     height: 138px;
     position: absolute;
     width: 720px;
-  }
+  } */
 
   .about-us-slider {
     padding-left: 114px;
     padding-right: 114px;
+    padding-top: 150px;
+    background-image: url('/img/spiral.png');
+    background-repeat: no-repeat;
+    background-position: 0% 2%;
+    background-size: 85%;
   }
 
   .about-us-slider__list {
@@ -915,7 +925,7 @@
 
   .footer-nav__list {
     column-count: 3;
-    column-gap: 155px;
+    column-gap: 169px;
   }
 
   .footer-nav__items:not(:last-child) {
