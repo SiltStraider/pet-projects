@@ -93,6 +93,7 @@ body {
   font-family: 'Muller', 'SansSerif';
   font-weight: 400;
   background: #FFF;
+  color: var(--background-dark);
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -193,6 +194,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 .hero__content {
   padding: 43px 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .title-h1 {
@@ -208,6 +211,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .hero__btn {
+  align-self: flex-start;
   background-color: var(--hover-color);
   color: white;
   padding: 17px 45px;
@@ -611,9 +615,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 .guests-accordion__bottom-item {
   max-width: 83px;
-}
-
-.guests-accordion__bottom-item:not(:last-child) {
   margin-bottom: 29px;
 }
 
@@ -938,6 +939,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .about-us-form__input {
+  width: 100%;
   min-height: 50px;
   min-width: 256px;
   border-radius: 40px;
@@ -1003,20 +1005,24 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .footer-mid {
-  padding-top: 26px;
+  padding-top: 30px;
   padding-bottom: 26px;
 }
 
 .footer-nav__list {
-  column-count: 2;
-  max-height: 182px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-height: 200px;
 }
 
-.footer-nav__items:not(:last-child) {
-  margin-bottom: 18px;
+.footer-nav__items {
+  display: flex;
+  margin-bottom: 22px;
+  margin-right: 78px;
 }
 
-.footerl-nac__links {
+.footer-nav__links {
   color: white;
 }
 
