@@ -129,12 +129,13 @@
     top: 14px;
   }
 
-  .choices__list--dropdown .choices__item--selectable {
-    padding-right: 20px;
+
+  .choices__list--dropdown .choices__item:not(:last-child) {
+    border-bottom: 1px solid #d2d5dd;
   }
 
-  .choices__list--dropdown .choices__item--selectable.is-highlighted:after {
-    opacity: 0;
+  .choices__list--dropdown .choices__item:focus {
+    color: var(--background-dark);
   }
 
   .header_choices {
@@ -147,21 +148,54 @@
     z-index: 1;
     border-color: #d2d5dd;
     border-radius: 0 0 10px 10px;
-    color: #333;
+    color: var(--background-dark);
   }
 
   .choices__inner {
     border: none;
-    background-color: #f5f6f7;
+    background-color: #e6e8ec;
     min-height: 0;
+  }
+
+  .choices__inner:hover {
+    background-color: #f5f6f7;
+  }
+
+  .choices__inner:focus {
+    background-color: #e6e8ec;
+  }
+
+  .choices__inner:active {
+    background-color: #d2d5dd;
   }
 
   .listbox::placeholder {
     display: none;
   }
 
-  .header_choices .choices__list--dropdown.is-active {
+  .choices__list--dropdown.is-active {
     border-color: #d2d5dd;
+  }
+
+  .choices__item {
+    color: var(--text-translucent)
+  }
+
+  .choices__item:focus {
+    color: var(--background-dark);
+    background-color: var(--hover-color);
+  }
+
+  .choices__item:active {
+    background-color: #d2d5dd;
+  }
+
+  .choices__list--dropdown .choices__item--selectable.is-highlighted {
+    color: var(--background-dark);
+    background-color: #f5f6f7;
+    border-color: #f5f6f7;
+    border-top: 1px solid #f5f6f7;
+    margin-top: -1px;
   }
 
   .choices__placeholder {
@@ -188,7 +222,7 @@
   }
 
   .choices__list--single .choices__item {
-    color: #333;
+    color: var(--background-dark);
   }
 
   .choices {
@@ -625,7 +659,7 @@
     width: 48px;
   }
 
-   .guests-accordion__bottom-item {
+  .guests-accordion__bottom-item {
     width: 160px;
     margin-right: 29px;
   }
@@ -691,24 +725,88 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-height: 202px;
+    max-height: 240px;
+    column-gap: 34px;
   }
 
-  .playlists__genres-items:not(:last-child) {
-    margin-bottom: 30px;
+  .playlists__genres-items {
+    margin-bottom: 39px;
   }
+
+  /* radio */
 
   .playlists__radio {
-    color: var(--background-dark);
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .playlists__radiobuttons {
+    opacity: 0;
+    position: absolute;
+  }
+
+  .playlists__radiobuttons_text {
+    position: relative;
+    padding-left: 42px;
+    cursor: pointer;
+    transition: color .3s ease-in-out;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 20px;
   }
 
-  .playlists__radiobuttons {
-    margin-right: 10px;
+  .playlists__radiobuttons_text:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 26px;
+    border: 2px solid var(--text-translucent);
+    border-radius: 100%;
+    transition: border-color .3s ease-in-out;
   }
+
+  .playlists__radiobuttons_text:after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 7px;
+    top: 4px;
+    background-color: white;
+    border-radius: 100%;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+  }
+
+  .playlists__radiobuttons_text:hover::before {
+    border-color: var(--hover-color)
+  }
+
+  .playlists__radiobuttons:not(:disabled):active+.playlists__radiobuttons_text::before {
+    background-color: #d2d5dd;
+  }
+
+  .playlists__radiobuttons:checked+.playlists__radiobuttons_text:not(:focus)::before {
+    border-color: var(--hover-color);
+  }
+
+  .playlists__radiobuttons:checked+.playlists__radiobuttons_text::after {
+    opacity: 1;
+  }
+
+  .playlists__radiobuttons:checked+.playlists__radiobuttons_text::before {
+    background-color: var(--hover-color)
+  }
+
+  .playlists__radiobuttons:focus+.playlists__radiobuttons_text::before {
+    border-color: var(--hover-color);
+  }
+
+  /* radio end */
 
   .playlists-groups__list {
     max-width: none;
@@ -1182,7 +1280,7 @@
     margin-bottom: 16px;
   }
 
-    .guests__content {
+  .guests__content {
     padding-bottom: 44px;
   }
 
@@ -1242,7 +1340,7 @@
     width: fit-content;
   }
 
-   .market-content__descr_1 {
+  .market-content__descr_1 {
     margin-bottom: 42px;
   }
 
@@ -1616,9 +1714,9 @@
     padding-bottom: 62px;
   }
 
-    .footer-top {
-      flex-basis: 187%;
-      /* margin-right: 505px; */
+  .footer-top {
+    flex-basis: 187%;
+    /* margin-right: 505px; */
   }
 
 }
