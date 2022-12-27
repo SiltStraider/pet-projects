@@ -579,7 +579,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .guests__content {
   padding-top: 54px;
-  padding-bottom: 54px;
+  /* padding-bottom: 54px;  временно*/
 }
 
 .guests__title {
@@ -941,6 +941,7 @@ h1, h2, h3, h4, h5, h6, p {
   color: var(--text-translucent);
   font-size: 12px;
   line-height: 16px;
+  max-width: 113px;
 }
 
 /* about-us-slider end */
