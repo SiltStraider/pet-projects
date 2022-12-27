@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
   <link rel="stylesheet" href="/css/css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css" />
+  <link href="/libs/slider/itc-slider.css" rel="stylesheet">
   <link rel="stylesheet" href="/css/media.css">
 
   <title>Радио - W-Wawe</title>
@@ -18,6 +19,7 @@
   <script src="js/accordion.js" defer></script>
   <script src="js/select1.js" defer></script>
   <script src="js/select.js" defer></script>
+  <script src="/libs/slider/itc-slider.js" defer></script>
 
 
 </head>
@@ -1049,48 +1051,53 @@
       </div>
 
       <div class="playlists-slider">
-        <ul class="list playlists-slider__list">
-          <li class="playlists-slider__item">
-            <button class="button playlists-slider__button">
-              Постпанк
-            </button>
-          </li>
-          <li class="playlists-slider__item">
-            <button class="button playlists-slider__button">
-              Хардкор
-            </button>
-          </li>
-          <li class="playlists-slider__item">
-            <button class="button playlists-slider__button">
-              Панк-рок
-            </button>
-          </li>
-          <li class="playlists-slider__item">
-            <button class="button playlists-slider__button">
-              Рок
-            </button>
-          </li>
-          <li class="playlists-slider__item">
-            <button class="button playlists-slider__button">
-              Прогрессивный&nbsp;рок
-            </button>
-          </li>
-          <li class="playlists-slider__item">
-            <button class="button playlists-slider__button">
-              Электронная&nbsp;музыка
-            </button>
-          </li>
-          <li class="playlists-slider__item">
-            <button class="button playlists-slider__button">
-              Классическая&nbsp;музыка
-            </button>
-          </li>
-          <li class="playlists-slider__item">
-            <button class="button playlists-slider__button">
-              Звуки&nbsp;природы&nbsp;и&nbsp;шум&nbsp;города
-            </button>
-          </li>
-        </ul>
+        <div class="itc-slider" data-slider="itc-slider" data-loop="false" data-autoplay="false">
+          <div class="itc-slider__wrapper">
+            <ul class="list playlists-slider__list itc-slider__items">
+              <li class="playlists-slider__item itc-slider__item">
+                <button class="button playlists-slider__button">
+                  Постпанк
+                </button>
+              </li>
+              <li class="playlists-slider__item itc-slider__item">
+                <button class="button playlists-slider__button">
+                  Хардкор
+                </button>
+              </li>
+              <li class="playlists-slider__item itc-slider__item">
+                <button class="button playlists-slider__button">
+                  Панк-рок
+                </button>
+              </li>
+              <li class="playlists-slider__item itc-slider__item">
+                <button class="button playlists-slider__button">
+                  Рок
+                </button>
+              </li>
+              <li class="playlists-slider__item itc-slider__item">
+                <button class="button playlists-slider__button">
+                  Прогрессивный рок
+                </button>
+              </li>
+              <li class="playlists-slider__item itc-slider__item">
+                <button class="button playlists-slider__button">
+                  Электронная музыка
+                </button>
+              </li>
+              <li class="playlists-slider__item itc-slider__item">
+                <button class="button playlists-slider__button">
+                  Классическая музыка
+                </button>
+              </li>
+              <li class="playlists-slider__item itc-slider__item">
+                <button class="button playlists-slider__button">
+                  Звуки природы и шум города
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
       </div>
 
       <div class="container">
@@ -1142,7 +1149,8 @@
                   <div class="playlists__radio-content">
                     <label class="playlists__radio">
                       <input type="radio" class="playlists__radiobuttons" name="genres">
-                      <span class="playlists__radiobuttons_text">Электронная музыка</span>
+                      <span class="playlists__radiobuttons_text">Электронная
+                        музыка</span>
                     </label>
                   </div>
                 </li>
@@ -1150,7 +1158,8 @@
                   <div class="playlists__radio-content">
                     <label class="playlists__radio">
                       <input type="radio" class="playlists__radiobuttons" name="genres">
-                      <span class="playlists__radiobuttons_text">Классическая музыка</span>
+                      <span class="playlists__radiobuttons_text">Классическая
+                        музыка</span>
                     </label>
                   </div>
                 </li>
@@ -1158,7 +1167,8 @@
                   <div class="playlists__radio-content">
                     <label class="playlists__radio">
                       <input type="radio" class="playlists__radiobuttons" name="genres">
-                      <span class="playlists__radiobuttons_text">Звуки природы и шум города</span>
+                      <span class="playlists__radiobuttons_text">Звуки природы
+                        и шум города</span>
                     </label>
                   </div>
                 </li>
@@ -1166,7 +1176,8 @@
             </div>
             <div class="playlist__left-side_underground">
               <p class="playlists__descr">
-                Раздел &laquo;Плейлисты&raquo; может содержать информацию, не&nbsp;предназначенную для
+                Раздел &laquo;Плейлисты&raquo; может содержать информацию,
+                не&nbsp;предназначенную для
                 несовершеннолетних
               </p>
               <span class="playlists__copyright">
@@ -1191,7 +1202,8 @@
                   <img src="img/ploho.jpg" alt="Ploho" class="playlists-groups__img">
                   <div class="playlists__items_text">
                     <h4 class="title-h4 playlists-groups__title-h4">Ploho</h4>
-                    <a href="" class="link playlists-groups__link">3 последних альбома</a>
+                    <a href="" class="link playlists-groups__link">3 последних
+                      альбома</a>
                   </div>
                 </div>
               </li>
@@ -1221,7 +1233,8 @@
                   <img src="img/human-tetris.jpg" alt="Human Tetris" class="playlists-groups__img">
                   <div class="playlists__items_text">
                     <h4 class="title-h4 playlists-groups__title-h4">Human Tetris</h4>
-                    <a href="" class="link playlists-groups__link">3 последних альбома</a>
+                    <a href="" class="link playlists-groups__link">3 последних
+                      альбома</a>
                   </div>
                 </div>
               </li>
@@ -1251,7 +1264,8 @@
                   <img src="img/joy-divison.jpg" alt="Joy Divison" class="playlists-groups__img">
                   <div class="playlists__items_text">
                     <h4 class="title-h4 playlists-groups__title-h4">Joy Division</h4>
-                    <a href="" class="link playlists-groups__link">Лучшее за всё время</a>
+                    <a href="" class="link playlists-groups__link">Лучшее
+                      за всё время</a>
                   </div>
                 </div>
               </li>
@@ -1261,7 +1275,8 @@
                   <img src="img/the-cure.jpg" alt="The Cure" class="playlists-groups__img">
                   <div class="playlists__items_text">
                     <h4 class="title-h4 playlists-groups__title-h4">The Cure</h4>
-                    <a href="" class="link playlists-groups__link">Лучшее за всё время</a>
+                    <a href="" class="link playlists-groups__link">Лучшее
+                      за всё время</a>
                   </div>
                 </div>
               </li>
@@ -1301,7 +1316,8 @@
                   <img src="img/gang-of-four.jpg" alt="Gang of Four" class="playlists-groups__img">
                   <div class="playlists__items_text">
                     <h4 class="title-h4 playlists-groups__title-h4">Gang Of Four</h4>
-                    <a href="" class="link playlists-groups__link">3 последних альбома</a>
+                    <a href="" class="link playlists-groups__link">3 последних
+                      альбома</a>
                   </div>
                 </div>
               </li>
@@ -1310,7 +1326,9 @@
 
           <div class="playlist__underground">
             <p class="playlists__descr">
-              Раздел &laquo;Плейлисты&raquo; может содержать информацию, не&nbsp;предназначенную для несовершеннолетних
+              Раздел &laquo;Плейлисты&raquo; может содержать информацию,
+              не&nbsp;предназначенную для
+              несовершеннолетних
             </p>
             <span class="playlists__copyright">
               &copy;&nbsp;2021&nbsp;l W-Wave
@@ -1392,98 +1410,102 @@
         </div>
 
         <div class="about-us-slider">
-          <ul class="list about-us-slider__list">
-            <li class="about-us-slider__item">
-              <picture>
-                <source srcset="img/gutenberg.jpg" media="(min-width: 1025px)">
-                <source srcset="img/gutenberg-1024.jpg" media="(min-width: 769px)">
-                <img src="img/gutenberg.jpg" alt="Дмитрий Гутенберг" class="about-us-slider__img">
-              </picture>
-              <div class="about-us-slider__text-content">
-                <p class="about-us-slider__name-teacher">
-                  Дмитрий Гутенберг
-                </p>
-                <p class="descr about-us-slider__descr">
-                  Эксперт (ну, почти) по&nbsp;всем вопросам (почти)
-                </p>
-              </div>
-            </li>
-            <li class="about-us-slider__item">
-              <picture>
-                <source srcset="img/vasileva.jpg" media="(min-width: 1025px)">
-                <source srcset="img/vasileva-1024.jpg" media="(min-width: 769px)">
-                <img src="img/vasileva.jpg" alt="Анна Васильева" class="about-us-slider__img">
-              </picture>
-              <div class="about-us-slider__text-content">
-                <p class="about-us-slider__name-teacher">
-                  Анна Васильева
-                </p>
-                <p class="descr about-us-slider__descr">
-                  Как я&nbsp;здесь оказалась? А&nbsp;главное&nbsp;&mdash; зачем?
-                </p>
-              </div>
-            </li>
-            <li class="about-us-slider__item">
-              <picture>
-                <source srcset="img/dmitrievski.jpg" media="(min-width: 1025px)">
-                <source srcset="img/dmitrievski-1024.jpg" media="(min-width: 769px)">
-                <img src="img/dmitrievski.jpg" alt="Пётр Дмитриевский" class="about-us-slider__img">
-              </picture>
-              <div class="about-us-slider__text-content">
-                <p class="about-us-slider__name-teacher">
-                  Пётр Дмитриевский
-                </p>
-                <p class="descr about-us-slider__descr">
-                  Господа! Внимание! Благодарю за&nbsp;внимание!
-                </p>
-              </div>
-            </li>
-            <li class="about-us-slider__item">
-              <picture>
-                <source srcset="img/fleganova.jpg" media="(min-width: 1025px)">
-                <source srcset="img/fleganova-1024.jpg" media="(min-width: 769px)">
-                <img src="img/fleganova.jpg" alt="Татьяна Флеганова" class="about-us-slider__img">
-              </picture>
-              <div class="about-us-slider__text-content">
-                <p class="about-us-slider__name-teacher">
-                  Татьяна Флеганова
-                </p>
-                <p class="descr about-us-slider__descr">
-                  Одна я&nbsp;в&nbsp;пальто стою красивая, а&nbsp;вокруг...
-                </p>
-              </div>
-            </li>
-            <li class="about-us-slider__item">
-              <picture>
-                <source srcset="img/prokopiev.jpg" media="(min-width: 1025px)">
-                <source srcset="img/prokopiev-1024.jpg" media="(min-width: 769px)">
-                <img src="img/prokopiev.jpg" alt="Фёдор Прокопьев" class="about-us-slider__img">
-              </picture>
-              <div class="about-us-slider__text-content">
-                <p class="about-us-slider__name-teacher">
-                  Фёдор Прокопьев
-                </p>
-                <p class="descr about-us-slider__descr">
-                  Привет! Я&nbsp;фотограф, музыкант, ведущий
-                </p>
-              </div>
-            </li>
-            <li class="about-us-slider__item">
-              <picture>
-                <source srcset="img/kortneva.jpg" media="(min-width: 1025px)">
-                <source srcset="img/kortneva-1024.jpg" media="(min-width: 769px)">
-                <img src="img/kortneva.jpg" alt="Светлана Кортнева" class="about-us-slider__img">
-              </picture>
-              <div class="about-us-slider__text-content">
-                <p class="about-us-slider__name-teacher">
-                  Светлана Кортнева
-                </p>
-                <p class="descr about-us-slider__descr">
-                  Художник-оформитель. Оформляю
-                </p>
-              </div>
-            </li>
-          </ul>
+          <div class="itc-slider" data-slider="itc-slider" data-loop="true" data-autoplay="false">
+            <div class="itc-slider__wrapper">
+              <ul class="list about-us-slider__list itc-slider__items">
+                <li class="about-us-slider__item itc-slider__item">
+                  <picture>
+                    <source srcset="img/gutenberg.jpg" media="(min-width: 1025px)">
+                    <source srcset="img/gutenberg-1024.jpg" media="(min-width: 769px)">
+                    <img src="img/gutenberg.jpg" alt="Дмитрий Гутенберг" class="about-us-slider__img">
+                  </picture>
+                  <div class="about-us-slider__text-content">
+                    <p class="about-us-slider__name-teacher">
+                      Дмитрий Гутенберг
+                    </p>
+                    <p class="descr about-us-slider__descr">
+                      Эксперт (ну, почти) по&nbsp;всем вопросам (почти)
+                    </p>
+                  </div>
+                </li>
+                <li class="about-us-slider__item itc-slider__item">
+                  <picture>
+                    <source srcset="img/vasileva.jpg" media="(min-width: 1025px)">
+                    <source srcset="img/vasileva-1024.jpg" media="(min-width: 769px)">
+                    <img src="img/vasileva.jpg" alt="Анна Васильева" class="about-us-slider__img">
+                  </picture>
+                  <div class="about-us-slider__text-content">
+                    <p class="about-us-slider__name-teacher">
+                      Анна Васильева
+                    </p>
+                    <p class="descr about-us-slider__descr">
+                      Как я&nbsp;здесь оказалась? А&nbsp;главное&nbsp;&mdash; зачем?
+                    </p>
+                  </div>
+                </li>
+                <li class="about-us-slider__item itc-slider__item">
+                  <picture>
+                    <source srcset="img/dmitrievski.jpg" media="(min-width: 1025px)">
+                    <source srcset="img/dmitrievski-1024.jpg" media="(min-width: 769px)">
+                    <img src="img/dmitrievski.jpg" alt="Пётр Дмитриевский" class="about-us-slider__img">
+                  </picture>
+                  <div class="about-us-slider__text-content">
+                    <p class="about-us-slider__name-teacher">
+                      Пётр Дмитриевский
+                    </p>
+                    <p class="descr about-us-slider__descr">
+                      Господа! Внимание! Благодарю за&nbsp;внимание!
+                    </p>
+                  </div>
+                </li>
+                <li class="about-us-slider__item itc-slider__item">
+                  <picture>
+                    <source srcset="img/fleganova.jpg" media="(min-width: 1025px)">
+                    <source srcset="img/fleganova-1024.jpg" media="(min-width: 769px)">
+                    <img src="img/fleganova.jpg" alt="Татьяна Флеганова" class="about-us-slider__img">
+                  </picture>
+                  <div class="about-us-slider__text-content">
+                    <p class="about-us-slider__name-teacher">
+                      Татьяна Флеганова
+                    </p>
+                    <p class="descr about-us-slider__descr">
+                      Одна я&nbsp;в&nbsp;пальто стою красивая, а&nbsp;вокруг...
+                    </p>
+                  </div>
+                </li>
+                <li class="about-us-slider__item itc-slider__item">
+                  <picture>
+                    <source srcset="img/prokopiev.jpg" media="(min-width: 1025px)">
+                    <source srcset="img/prokopiev-1024.jpg" media="(min-width: 769px)">
+                    <img src="img/prokopiev.jpg" alt="Фёдор Прокопьев" class="about-us-slider__img">
+                  </picture>
+                  <div class="about-us-slider__text-content">
+                    <p class="about-us-slider__name-teacher">
+                      Фёдор Прокопьев
+                    </p>
+                    <p class="descr about-us-slider__descr">
+                      Привет! Я&nbsp;фотограф, музыкант, ведущий
+                    </p>
+                  </div>
+                </li>
+                <li class="about-us-slider__item itc-slider__item">
+                  <picture>
+                    <source srcset="img/kortneva.jpg" media="(min-width: 1025px)">
+                    <source srcset="img/kortneva-1024.jpg" media="(min-width: 769px)">
+                    <img src="img/kortneva.jpg" alt="Светлана Кортнева" class="about-us-slider__img">
+                  </picture>
+                  <div class="about-us-slider__text-content">
+                    <p class="about-us-slider__name-teacher">
+                      Светлана Кортнева
+                    </p>
+                    <p class="descr about-us-slider__descr">
+                      Художник-оформитель. Оформляю
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <div class="container">

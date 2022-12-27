@@ -337,11 +337,19 @@
 
   .playlists-slider__list {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 13px;
   }
 
-  .playlists-slider__item:not(:last-child) {
-    margin-right: 15px;
+  .itc-slider__item {
+    flex: 0 0 44%;
+  }
+
+  .itc-slider__item:last-child {
+    display: none;
+  }
+
+  .itc-slider__wrapper {
+    overflow: visible;
   }
 
   .playlists-slider__button {
@@ -355,6 +363,14 @@
 
   .playlists-groups__list {
     max-width: 256px;
+  }
+
+  /* about us */
+
+  /* slider */
+
+  .about-us-slider__item {
+    flex: 0 0 17%;
   }
 
 }
