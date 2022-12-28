@@ -10,6 +10,103 @@
 
   /* header */
 
+  .burger-nav__close-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .burger-nav__close-btn:focus {
+    outline: 1px solid var(--background-dark);
+    outline-offset: 3px;
+  }
+
+  .burger-nav {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: transform .3s ease-in-out, opacity .3s ease-in-out, visibility .3s ease-in-out;
+  }
+
+  .burger-nav.active {
+    transform: translateX(0);
+    display: flex;
+  }
+
+  .burger-nav__top-content {
+    background-color: #d2d5dd;
+    padding: 13px 38px 13px 32px;
+    width: 100%;
+  }
+
+  .burger-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    height: 150px;
+    max-width: 250px;
+  }
+
+  .burger-nav__link {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--background-dark);
+  }
+
+  .burger-nav__link:focus, .burger-nav__link_bottom:focus {
+    outline-offset: 3px;
+    outline: 1px solid var(--background-dark);
+  }
+
+  .burger-nav__item {
+    margin-bottom: 40px;
+    margin-right: 48px;
+  }
+
+  .burger-nav__item:nth-child(even) {
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-top: 30px;
+  }
+
+  .burger-nav__bottom-content {
+    padding: 30px 70px 30px 32px;
+  }
+
+  .burger-nav__list_bottom {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 250px;
+  }
+
+  .burger-nav__item_bottom {
+    margin-bottom: 27px;
+    margin-right: 73px;
+    min-width: 70px;
+  }
+
+  .burger-nav__item_bottom:nth-child(even) {
+    margin-right: 0;
+  }
+
+  .burger-nav__link_bottom {
+    color: var(--background-dark);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
   .burger {
     display: flex;
     position: relative;
@@ -415,6 +512,54 @@
     padding: 10px 31px;
   }
 
+  .burger-nav__bottom-content {
+    display: none;
+  }
+
+  .burger-nav__item {
+    margin-bottom: 63px;
+  }
+
+  .burger-nav__item:nth-child(even) {
+    margin-bottom: 63px;
+    padding: 0;
+  }
+
+  .burger-nav__top-content {
+    height: 100%;
+    width: 100%;
+    padding: 28px 38px 13px 114px;
+    position: relative;
+  }
+
+  .burger-nav__top-content::before {
+    content: '';
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 10%;
+    width: 150px;
+    height: 400px;
+    background-image: url(/img/spiral-burger-right.png);
+    background-repeat: no-repeat;
+  }
+
+  .burger-nav__top-content::after {
+    content: '';
+    display: flex;
+    position: absolute;
+    top: 11%;
+    right: 29%;
+    width: 150px;
+    height: 400px;
+    background-image: url(/img/spiral-burger.png);
+    background-repeat: no-repeat;
+  }
+
+  .burger-nav__close-btn {
+    margin-bottom: 50px;
+  }
+
   .burger__line:first-child {
     top: 20%;
   }
@@ -429,7 +574,7 @@
 
   .header-bottom_768px {
     display: flex;
-    padding: 17px 0;
+    padding: 18px 0;
     align-items: center;
   }
 
@@ -816,7 +961,7 @@
 
   .playlists__genres-list_768 {
     display: flex;
-    margin-bottom: 52px;
+    margin-bottom: 14px;
   }
 
   .playlists__title-h2 {
@@ -832,14 +977,15 @@
 
   .playlists__genres-list {
     display: flex;
+    padding-right: 70px;
     flex-direction: column;
     flex-wrap: wrap;
-    max-height: 240px;
+    max-height: 260px;
     column-gap: 34px;
   }
 
   .playlists__genres-items {
-    margin-bottom: 39px;
+    margin-bottom: 40px;
   }
 
   /* radio */
@@ -855,6 +1001,8 @@
   }
 
   .playlists__radiobuttons_text {
+    display: flex;
+    text-align: left;
     position: relative;
     padding-left: 42px;
     cursor: pointer;
@@ -1173,20 +1321,6 @@
 
   /* header */
 
-  .burger {
-    display: none;
-  }
-
-  .header-mid_1024 {
-    display: flex;
-    align-items: center;
-  }
-
-  .header-mid__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
   .header-bottom__item_768px:not(:last-child) {
     margin-right: 28px;
   }
@@ -1422,6 +1556,22 @@
 }
 
 @media (min-width: 930px) {
+
+  /* header */
+
+  .burger, .burger-nav {
+    display: none;
+  }
+
+  .header-mid_1024 {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-mid__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   /* market */
 
