@@ -619,10 +619,6 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: -1px;
 }
 
-.guests-accordion__top-content_1 {
-  margin-bottom: 20px;
-}
-
 .guests-accordion__arrow-button_svg {
   width: 30px;
 }
@@ -653,6 +649,8 @@ h1, h2, h3, h4, h5, h6, p {
   margin-right: 60px;
 }
 
+/* accordion tabs */
+
 .guests-accordion__bottom-content-tabs {
   color: white;
   font-style: normal;
@@ -662,8 +660,45 @@ h1, h2, h3, h4, h5, h6, p {
   text-align: left;
 }
 
+.guests-accordion__bottom-content-tabs {
+  text-decoration-line: none;
+  color: #fff;
+  transition-property: color;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.guests-accordion__bottom-content-tabs--active {
+  color: #aa9dfa;
+}
+
+.guests-accordion__bottom-content-tabs:hover {
+  color: #aa9dfa;
+}
+
+.guests-accordion__bottom-content-tabs:focus {
+  color: #aa9dfa;
+}
+
+.guests-accordion__bottom-content-tabs:active {
+  color: #aa9dfa;
+  outline: none;
+}
+
+.accordion-people-info_blogers {
+  display: none;
+}
+
+.accordion-people-info_blogers--active {
+  display: flex;
+  flex-direction: column;
+}
+
 .accordion-people-info__img {
-  width: 256px;
+  max-width: 256px;
   margin-bottom: 6px;
 }
 
