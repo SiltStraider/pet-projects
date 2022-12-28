@@ -178,6 +178,10 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 14px 0;
 }
 
+.burger-nav {
+  display: none;
+}
+
 .search-form {
   display: none;
 }
@@ -579,7 +583,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .guests__content {
   padding-top: 54px;
-  /* padding-bottom: 54px;  временно*/
+  padding-bottom: 54px;
 }
 
 .guests__title {

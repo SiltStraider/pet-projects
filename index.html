@@ -15,6 +15,7 @@
 
   <title>Радио - W-Wawe</title>
 
+  <script src="js/burger.js" defer></script>
   <script src="js/search.js" async></script>
   <script src="js/accordion.js" defer></script>
   <script src="js/select1.js" defer></script>
@@ -77,11 +78,87 @@
           </nav>
         </div>
 
-        <div class="burger" type="button">
+        <button class="button burger">
           <span class="burger__line"></span>
           <span class="burger__line"></span>
           <span class="burger__line"></span>
-        </div>
+        </button>
+
+        <nav class="burger-nav">
+          <div class="burger-nav__top-content">
+            <button class="burger-nav__close-btn">
+              <svg class="burger-nav__close-btn_svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect x="4.5752" y="2.95406" width="24" height="3" rx="1.5" transform="rotate(45 4.5752 2.95406)"
+                  fill="#6D31EE" />
+                <rect x="21.5459" y="5.07538" width="24" height="3" rx="1.5" transform="rotate(135 21.5459 5.07538)"
+                  fill="#6D31EE" />
+              </svg>
+            </button>
+            <ul class="list burger-nav__list">
+              <li class="burger-nav__item">
+                <a href="" class="link burger-nav__link">
+                  Подкасты
+                </a>
+              </li>
+              <li class="burger-nav__item">
+                <a href="" class="link burger-nav__link">
+                  Плейлисты
+                </a>
+              </li>
+              <li class="burger-nav__item">
+                <a href="" class="link burger-nav__link">
+                  Передачи
+                </a>
+              </li>
+              <li class="burger-nav__item">
+                <a href="" class="link burger-nav__link">
+                  О нас
+                </a>
+              </li>
+              <li class="burger-nav__item">
+                <a href="" class="link burger-nav__link">
+                  Гости
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="burger-nav__bottom-content">
+            <ul class="list burger-nav__list_bottom">
+              <li class="burger-nav__item_bottom">
+                <a href="" class="link burger-nav__link_bottom">
+                  Новости
+                </a>
+              </li>
+              <li class="burger-nav__item_bottom">
+                <a href="" class="link burger-nav__link_bottom">
+                  Опросы
+                </a>
+              </li>
+              <li class="burger-nav__item_bottom">
+                <a href="" class="link burger-nav__link_bottom">
+                  Блоги
+                </a>
+              </li>
+              <li class="burger-nav__item_bottom">
+                <a href="" class="link burger-nav__link_bottom">
+                  Рейтинги
+                </a>
+              </li>
+              <li class="burger-nav__item_bottom">
+                <a href="" class="link burger-nav__link_bottom">
+                  Топы
+                </a>
+              </li>
+              <li class="burger-nav__item_bottom">
+                <a href="" class="link burger-nav__link_bottom">
+                  Реклама
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
 
 
         <form action="" class="search-form">
@@ -1167,8 +1244,7 @@
                   <div class="playlists__radio-content">
                     <label class="playlists__radio">
                       <input type="radio" class="playlists__radiobuttons" name="genres">
-                      <span class="playlists__radiobuttons_text">Звуки природы
-                        и шум города</span>
+                      <span class="playlists__radiobuttons_text">Звуки природы и шум города</span>
                     </label>
                   </div>
                 </li>
