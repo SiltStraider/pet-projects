@@ -227,7 +227,7 @@ h1, h2, h3, h4, h5, h6, p {
 /* hero */
 
 .hero__content {
-  padding: 43px 0;
+  padding: 42px 0;
   display: flex;
   flex-direction: column;
 }
@@ -463,7 +463,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .broadcascts-kinds__item {
   position: relative;
-  padding: 60px 10px 12px;
+  padding: 61px 10px 12px;
   border: 1px solid #e6e8ec;
   font-size: 12px;
   margin-bottom: 30px;
@@ -569,7 +569,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .broadcasts-archive_border {
   border-top: 1px solid #e6e8ec;
-  padding-top: 30px;
+  padding-top: 31px;
   display: flex;
 }
 
@@ -733,6 +733,7 @@ h1, h2, h3, h4, h5, h6, p {
   border: 2px solid var(--focus-color);
   border-radius: 77px;
   padding: 8px 13px;
+  align-self: flex-start;
 }
 
 /* playlists */
@@ -941,6 +942,7 @@ h1, h2, h3, h4, h5, h6, p {
 /* about-us-slider */
 
 .about-us-slider {
+  position: relative;
   display: flex;
   padding-left: 32px;
   overflow: hidden;
