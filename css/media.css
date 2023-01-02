@@ -4,7 +4,7 @@
     padding: 0 32px;
   }
 
-  .header-mid__logo-link, .header-mid_1024, .header-mid__button, .header-bottom_768px, .header-bottom__button_play-alone, .header-bottom__list, .age-rating, .broadcasts-archive_1024, .playlist__left-side_underground, .footer-nav_top-hidden, .choices__list--dropdown .choices__item--selectable:after {
+  .header-mid__logo-link, .header-mid_1024, .header-mid__button, .header-bottom_768px, .header-bottom__button_play-alone, .header-bottom__list, .age-rating, .broadcasts-archive_1024, .playlist__left-side_underground, .footer-nav_top-hidden, .choices__list--dropdown .choices__item--selectable:after, .itc-slider__btn, .itc-slider__btn_prev, .itc-slider__btn_next {
     display: none;
   }
 
@@ -443,10 +443,6 @@
 
   .itc-slider__item:last-child {
     display: none;
-  }
-
-  .itc-slider__wrapper {
-    overflow: visible;
   }
 
   .playlists-slider__button {
@@ -951,11 +947,13 @@
 
   .guests-accordion__bottom-content {
     margin-bottom: 0;
+    padding-top: 30px;
   }
 
   .accordion-people-info__img {
     width: 100%;
     margin-bottom: 0;
+    max-width: fit-content;
   }
 
   .accordion-people-info__social-list {
@@ -977,6 +975,7 @@
 
   .accordion-people-info__button {
     padding: 10px 18px;
+    align-self: flex-start;
   }
 
   /* playlists */
@@ -1148,7 +1147,7 @@
   }
 
   .market-content__title-h2 {
-    background-position: 45% 98%;
+    background-position: 49% 98%;
     padding-bottom: 31px;
     margin-bottom: 17px;
   }
@@ -1230,8 +1229,43 @@
     margin-bottom: 0;
   }
 
+  .itc-slider__btn, .itc-slider__btn_prev, .itc-slider__btn_next {
+    display: flex;
+  }
+
+   .itc-slider {
+    width: 100%;
+  }
+
+  .itc-slider__btn {
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+    padding: 0;
+    top: 33%;
+  }
+
+  .itc-slider__btn_prev {
+    left: -12%;
+  }
+
+  .itc-slider__btn_prev::before {
+    width: 42px;
+    height: 42px;
+    background-image: url('/img/slider-btn-left.png');
+  }
+
+  .itc-slider__btn_next {
+    right: -12%;
+  }
+
+  .itc-slider__btn_next::before {
+    width: 42px;
+    height: 42px;
+    background-image: url('/img/slider-btn-right.png');
+  }
+
   .about-us-slider__list {
-    overflow: hidden;
     margin-bottom: 30px;
   }
 
@@ -1261,6 +1295,7 @@
   .about-us-slider__descr {
     font-size: 16px;
     line-height: 24px;
+    max-width: 255px;
   }
 
   .about-us-form__textarea {
@@ -1482,8 +1517,8 @@
 
   .broadcasts__wrapper {
     display: flex;
-    padding-top: 94px;
-    padding-bottom: 65px;
+    padding-top: 95px;
+    padding-bottom: 66px;
   }
 
   .broadcasts__title {
@@ -1550,18 +1585,22 @@
   }
 
   .guests__content {
-    padding-bottom: 44px;
+    padding-bottom: 45px;
   }
 
   /* playlists */
 
   /* временно */
   .playlists__genres-list_768 {
-    margin-bottom: 0;
+    margin-bottom: 8px;
   }
 
-  .playlists__genres-items:not(:last-child) {
-    margin-bottom: 12px;
+  .playlists__genres-list {
+    max-height: 222px;
+  }
+
+  .playlists__genres-items {
+    margin-bottom: 26px;
   }
 
   /* временно */
@@ -1575,7 +1614,7 @@
   }
 
   .playlist__underground {
-    padding-bottom: 87px;
+    padding-bottom: 89px;
   }
 
 
@@ -1614,7 +1653,7 @@
   .market-content__img {
     max-width: 397px;
     max-height: 397px;
-    margin-right: 30px;
+    margin-right: 33px;
   }
 
   .market-content__right-side {
@@ -1626,7 +1665,7 @@
   }
 
   .market-content__descr_1 {
-    margin-bottom: 42px;
+    margin-bottom: 14px;
   }
 
   /* about us */
@@ -1649,6 +1688,27 @@
     padding-left: 100px;
     padding-right: 100px;
     margin-bottom: 6px;
+  }
+
+  .itc-slider__btn {
+    top: 35%;
+  }
+
+  .itc-slider__btn_prev {
+    left: -8.3%;
+  }
+
+  .itc-slider__btn_next {
+    right: -8.3%;
+  }
+
+  .itc-slider__btn_next::before {
+    width: 48px;
+    height: 48px;
+  }
+
+  .about-us-slider__descr {
+    max-width: fit-content;
   }
 
   .about-us-slider__item {
@@ -1830,7 +1890,7 @@
 
   .hero__content {
     padding-top: 96px;
-    padding-bottom: 93px;
+    padding-bottom: 95px;
     background-size: 32%;
   }
 
@@ -1846,6 +1906,10 @@
   }
 
   /* broadcasts */
+
+  .broadcasts__wrapper {
+    padding-bottom: 64px;
+  }
 
   .broadcasts-kinds {
     max-width: 825px;
@@ -1887,16 +1951,22 @@
     display: none;
   }
 
+  .playlists__genres-list_768 {
+    margin-bottom: 0;
+    border-bottom: 1px solid #d2d5dd;
+  }
+
   .playlist__left-side_underground {
     display: flex;
     flex-direction: column;
-    padding-top: 60px;
+    padding-top: 39px;
   }
 
   .playlists__left-side-content {
     display: flex;
     flex-direction: column;
-    margin-right: 122px;
+    margin-right: 30px;
+    min-width: 350px;
   }
 
   .playlists-groups {
@@ -1906,7 +1976,7 @@
   .playlists__genres-list {
     flex-wrap: nowrap;
     max-height: none;
-    margin-bottom: 100px;
+    padding-right: 1px;
   }
 
   .playlists-groups__content {
@@ -1930,6 +2000,11 @@
     margin-right: 30px;
   }
 
+  .playlists-groups__flag_rus, .playlists-groups__flag_eng {
+    right: 0;
+    left: auto;
+  }
+
   .playlists__items_text {
     min-width: 100px;
     min-height: 50px;
@@ -1949,6 +2024,7 @@
   .market-content__img {
     max-width: 640px;
     max-height: 640px;
+    margin-right: 30px;
   }
 
   .market-content__title-h2 {
@@ -1971,6 +2047,20 @@
     padding-left: 405px;
     padding-right: 405px;
     margin-bottom: 30px;
+  }
+
+  .itc-slider__btn {
+    width: 48px;
+    height: 48px;
+    top: 35%;
+  }
+
+  .itc-slider__btn_next {
+    right: -7%;
+  }
+
+  .itc-slider__btn_prev {
+    left: -7%;
   }
 
   .about-us-slider__item {
@@ -1996,7 +2086,7 @@
   /* footer */
 
   .footer-top__wrapper_all-top-footer {
-    padding-bottom: 62px;
+    padding-bottom: 61px;
   }
 
   .footer-top {
