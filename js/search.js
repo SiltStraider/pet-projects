@@ -1,10 +1,6 @@
-var btn = document.querySelector('.search');
+let btn = document.querySelector('.search');
+let searchForm = document.querySelector(".search-form");
 
-document.querySelector(".search").addEventListener("click", function() {
-  document.querySelector(".search-form").classList.add("search-form__active");
-  this.classList.add("active");
+btn.addEventListener('click', function(){
+  searchForm.classList.toggle('search-form__active');
 })
-
-function showBlock() {
-  btn.addEventListener('click', showBlock);
-}
